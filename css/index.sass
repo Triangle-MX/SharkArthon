@@ -1,0 +1,51 @@
+#hero
+    padding: 80px 10px
+    text-align: center
+    background-color: $black
+    color: $white
+
+    #logo
+        width: 100%
+        max-width: 650px
+
+#retos
+    .reto
+        display: block
+        padding: 80px 0
+        color: $white
+        text-align: center
+        cursor: pointer
+        z-index: 1
+        transition: $transition
+
+        &:hover
+            z-index: 2
+            transform: scale(1.1)
+            box-shadow: 0 0 20px 10px rgba(0,0,0,.1)
+            border-radius: 25px
+            background-color: $white
+            color: $black
+
+            @media (max-width: 991px)
+                transform: scale(1) !important
+                z-index: 2
+                box-shadow: 0 0 20px 10px rgba(0,0,0,.1)
+                border-radius: 0px !important
+
+        .icon
+            font-size: 500%
+
+            @media (max-width: 991px)
+                font-size: 350%
+
+
+
+    /* Por si Shark se expande a Primero */
+    .primero
+        background-color: $primero
+
+    .segundo
+        background-color: $segundo
+
+    .tercero
+        background-color: $tercero

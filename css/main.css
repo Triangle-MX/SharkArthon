@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ecf0f1 !important;
+  color: #2c3e50 !important;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+
+/* index.html */
+#hero {
+  padding: 80px 10px;
+  text-align: center;
+  background-color: #2c3e50;
+  color: #ecf0f1; }
+  #hero #logo {
+    width: 100%;
+    max-width: 650px; }
+
+#retos {
+  /* Por si Shark se expande a Primero */ }
+  #retos .reto {
+    display: block;
+    padding: 80px 0;
+    color: #ecf0f1;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s ease-out; }
+    #retos .reto:hover {
+      z-index: 2;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 25px;
+      background-color: #ecf0f1;
+      color: #2c3e50; }
+      @media (max-width: 991px) {
+        #retos .reto:hover {
+          transform: scale(1) !important;
+          z-index: 2;
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 0px !important; } }
+    #retos .reto .icon {
+      font-size: 500%; }
+      @media (max-width: 991px) {
+        #retos .reto .icon {
+          font-size: 350%; } }
+  #retos .primero {
+    background-color: #f1c40f; }
+  #retos .segundo {
+    background-color: #2ecc71; }
+  #retos .tercero {
+    background-color: #3498db; }
+
+/*# sourceMappingURL=main.css.map */
